@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/signUp.CSS" />
+    <title>Facebook-SignUp</title>
+  </head>
+  <body class="bg-light">
+    <section
+      class="bg-white shadow d-flex justify-content-center align-items-center h-100 w-50 mt-5 m-auto"
+    >
+      <form class="" onsubmit="return handlForm()" action="index.html">
+        <div class="form-header">
+          <h1 class="text-center text-white bg-primary p-2">Create Account</h1>
+        </div>
+        <div class="form-body p-3 text-primary fw-bold">
+          <div class="row justify-content-evenly">
+            <div class="col-lg-5 col-md-10">
+              <label class="firstNamelabel">First Name :</label>
+              <input
+                class="firstName"
+                type="text"
+                placeholder="Enter your first name"
+                title="Required-{FirstName only without any spaces}"
+              />
+            </div>
+            <div class="col-lg-5 col-md-10">
+              <label class="lastNameLabel">Last Name :</label>
+              <input
+                class="lastName"
+                type="text"
+                placeholder="Enter your last name"
+                title="Required-{LastName only without any spaces}"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-lg-5 col-md-10">
+              <label class="emailLabel">Email :</label>
+              <input
+                class="email"
+                type="text"
+                placeholder="Enter your email address"
+                title="Email shall be like : {name@domain.com}"
+              />
+            </div>
+            <div class="col-lg-5 col-md-10">
+              <label class="phoneLabel">Phone Number :</label>
+              <input
+                class="phone"
+                type="text"
+                placeholder="Enter your phone number"
+                title="Phone Number shall be 11 numbers like {01xx-xxx-xxxx}"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-lg-5 col-md-10">
+              <label class="passwordLabel">Password :</label>
+              <input
+                class="password"
+                type="password"
+                placeholder="Enter your password"
+                title="Password shall be more than 5 characters"
+              />
+            </div>
+            <div class="col-lg-5 col-md-10">
+              <label class="confpassLabel">Confirm Password :</label>
+              <input
+                class="confpass"
+                type="password"
+                placeholder="Confirm Password :"
+                title="Password confirmation shall be the same with password"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-lg-5 col-md-10">
+              <label class="genderLabel">Gender :</label>
+              <div class="gender">
+                <input
+                  class="checkGender"
+                  type="radio"
+                  name="Gender"
+                  value="Male"
+                />
+                <label>Male</label>
+              </div>
+              <div class="gender">
+                <input
+                  class="checkGender"
+                  type="radio"
+                  name="Gender"
+                  value="Female"
+                />
+                <label>Female</label>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-10">
+              <label class="birthLabel">Birthdate :</label>
+              <input type="date" name="" id="Birthdate" class="birth" />
+            </div>
+          </div>
+          <div>
+            <input
+              class="btn btn-primary"
+              type="reset"
+              value="Reset"
+              onclick="return resetValues()"
+            />
+            <input
+              class="register btn btn-primary"
+              type="submit"
+              value="Register"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signUp.js"></script>
+  </body>
+</html>

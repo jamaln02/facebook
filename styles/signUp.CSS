@@ -1,0 +1,46 @@
+:root {
+  --bg: #f0f2f5;
+  --blue: #1877f2;
+  --dark-blue: #1360c4;
+  --white: #fff;
+  --green: #42b72a;
+  --dark-green: #369423;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+section {
+  max-width: 600px;
+  height: 100vh;
+}
+form label {
+  margin-bottom: 0.5em;
+  padding: 5px 10px;
+  color: #1877f2;
+}
+input {
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+  padding: 5px 15px 5px 15px;
+}
+.gender label {
+  color: #666;
+}
+
+input::placeholder {
+  color: #666;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#Birthdate {
+  padding-left: 60px;
+}

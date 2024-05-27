@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Facebook-Login</title>
+  </head>
+  <body>
+    <section
+      class="main-wrapper d-flex flex-lg-row justify-content-lg-between align-items-lg-start m-auto flex-column justify-content-center align-items-center"
+    >
+      <div class="branding w-50 mt-5 ms-2">
+        <h1 class="logo">Facebook</h1>
+        <h2 class="slogan">
+          Connect with friends and the world around you on Facebook.
+        </h2>
+      </div>
+      <div>
+        <div class="panel">
+          <form onsubmit="return handlForm()" action="signUp.html">
+            <p class="uservaild d-none text-danger fw-bold">
+              Invalid UserName or Password ⛔
+            </p>
+            <input
+              class="userName p-2 pb-3 mb-3 ps-3"
+              type="text"
+              placeholder="Email address or phone number"
+            />
+            <input
+              class="userPassword p-2 pb-3 mb-3 ps-3"
+              type="password"
+              placeholder="Password"
+            />
+            <p class="text-danger d-none passwordVaild">
+              Password should be more than <strong>6 characters</strong>
+            </p>
+            <div class="d-flex align-items-center gap-1">
+              <input class="inputshowpassword" type="checkbox" name="" id="" />
+              <p class="m-0 text-primary fw-bold">Show Password</p>
+            </div>
+            <input
+              type="submit"
+              value="Log In"
+              class="login btn btn-primary m-1 p-1 mb-5 fw-bold mt-1"
+            />
+            <a href="#" class="text-decoration-none">Forget Password?</a>
+            <hr class="mt-2 m-1 opacity-25" />
+            <a
+              class="text-decoration-none btn btn-success text-light ps-3 pb-2 pt-2 p-2 mt-4 text-center fw-bold"
+              href="signUp.html"
+              >Create New Account</a
+            >
+          </form>
+        </div>
+        <div class="d-flex flex-row bottom-link">
+          <a class="text-primary text-decoration-none fw-bold" href="#"
+            >Create a Page</a
+          >
+          <p>for a celebrity, brand or business.</p>
+        </div>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

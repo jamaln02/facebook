@@ -1,0 +1,91 @@
+:root {
+  --bg: #f0f2f5;
+  --blue: #1877f2;
+  --dark-blue: #1360c4;
+  --white: #fff;
+  --green: #42b72a;
+  --dark-green: #369423;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg);
+  font-family: Helvetica, sans-serif;
+}
+.main-wrapper {
+  width: 70%;
+  overflow: hidden;
+
+  margin: 7% 10% 2% 12% !important;
+}
+.logo {
+  font-size: 60px;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.slogan {
+  color: #6e6d6d;
+  font-weight: 100;
+  line-height: 1.2;
+  margin: 1.2em 0em;
+  font-size: 1.7em;
+}
+.panel {
+  background-color: var(--white);
+  width: 400px;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 20px 2px rgb(150 150 150);
+  text-align: center;
+}
+.panel form {
+  padding: 25px;
+}
+
+.uservaild {
+  font-size: 18px;
+}
+input {
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+  padding: 1em;
+  margin: 1.3em 0em;
+  min-width: 100%;
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 15px;
+}
+input::placeholder {
+  font-weight: 100;
+  font-size: small;
+}
+input:focus {
+  outline: none;
+}
+.inputshowpassword {
+  min-width: inherit;
+  padding: inherit;
+  /* margin: inherit; */
+  cursor: pointer;
+}
+.passwordVaild {
+  font-weight: 600;
+  font-size: 12px;
+}
+a.btn {
+  background-color: var(--green);
+}
+.bottom-link {
+  justify-content: center;
+  font-size: 0.9em;
+  color: #6e6d6d;
+}
+.bottom-link a {
+  font-size: 1em;
+  margin-right: 0.5em;
+}
