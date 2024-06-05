@@ -44,3 +44,31 @@ input:focus {
 #Birthdate {
   padding-left: 60px;
 }
+
+
+
+
+@media screen and (max-width: 992px) {
+
+  section {
+    width: 70%;
+    height: 100vh;
+  }
+  
+  form label {
+    margin-bottom: 0.2em;
+    padding: 3px 7px;
+   
+  }
+  input {
+
+    margin-bottom: 0.3em;
+    padding: 3px 10px 3px 10px;
+  }
+
+  #Birthdate {
+    padding-left: 40px;
+    margin-bottom: 10px ;
+  }
+
+}
